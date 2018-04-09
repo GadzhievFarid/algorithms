@@ -20,6 +20,10 @@ public class AdjacencyMatrixGraph implements Graph {
         System.out.println(graph);
     }
 
+    public int getVertexNumber() {
+        return vertexNumber;
+    }
+
     @Override
     public void addEdge(int v, int w) {
         if (v > vertexNumber || w > vertexNumber) {
